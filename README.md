@@ -6,7 +6,7 @@ deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https:
 ## Step 2: Ensure VirtualBox and DKMS Are Properly Installed
 ### Remove any broken installations:
 
-bash ```
+```
 sudo apt remove --purge virtualbox virtualbox-dkms
 sudo rm -rf /usr/src/vboxhost-*
 
