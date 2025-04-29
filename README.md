@@ -4,9 +4,10 @@
 deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian <mydist> contrib
 
 ## Step 2: Ensure VirtualBox and DKMS Are Properly Installed
-### Remove any broken installations:
 
 ```
+### Remove any broken installations:
+
 sudo apt remove --purge virtualbox virtualbox-dkms
 sudo rm -rf /usr/src/vboxhost-*
 
@@ -16,5 +17,6 @@ sudo apt update
 sudo apt install virtualbox virtualbox-dkms
 
 ### Install Linux headers (required for DKMS):
+
 sudo apt install linux-headers-$(uname -r)
 ```
